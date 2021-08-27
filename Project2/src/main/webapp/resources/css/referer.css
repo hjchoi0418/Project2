@@ -1,0 +1,187 @@
+#main {
+    position: relative;
+    top:0;
+    height:auto;
+    display:flex;
+    justify-content:center;
+    background:none;
+}
+
+#main .container {
+    justify-content:center;
+    width:100%;
+    max-width:600px;
+}
+
+#main .container:after {
+    content:"";
+    display:block;
+    clear:both;
+}
+
+#main .container .contentHeader {
+    position:relative;
+    width:100%;
+    height:500px;
+    padding:28px 31px 48px;
+    background-image:url(../images/main/contentHeader.png);
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+#main .container .contentHeader h1 {
+    margin:0;
+    font-size:15px;
+    font-weight:700;
+    color:#ffffffe6;
+}
+
+#main .container .contentHeader p {
+    margin-top:20px;
+    font-size:35px;
+    line-height:45px;
+    font-weight:900;
+    letter-spacing:-0.5px;
+}
+
+#main .container .contentHeader .twoWeeks {
+    position:absolute;
+    bottom:48px;
+    right:31px;
+    display:inline-block;
+    width:396px;
+    height:160px;
+    background-image:url(../images/main/2weeksLogo.svg);
+    background-size:396px 160px;
+}
+
+#main .container .contentBody {
+    width:100%;
+    height:575px;
+    padding:20px 122px;
+    background-color:#620832;
+    background-image:url(../images/main/refererDecoration.svg);
+    background-size:656px 222px;
+    background-position: -42px 280px;
+    background-repeat:no-repeat;
+}
+
+#main .container .contentBody .content {
+    width:356px;
+}
+
+#main .container .contentBody .content button {
+    width:100%;
+    height:54px;
+    font-size:16px;
+    line-height:16px;
+    font-weight:700;
+    color:#FFF;
+    letter-spacing:-0.5px;
+    border:none;
+    border-radius:4px;
+    background-color:#f82f62;
+    cursor:pointer;
+}
+
+#main .container .contentBody .content button:hover {
+    background-color:#ff3d6e;
+}
+
+#main .container .contentBody .content > p {
+    margin-top:40px;
+    margin-bottom:18px;
+    font-size:16px;
+    font-weight:400;
+    line-height:24px;
+    text-align:center;
+}
+
+#main .container .contentBody .content .link-wrap {
+    display:flex;
+    width:216px;
+    box-pack:justify;
+    justify-content:space-between;
+    align-items:center;
+    margin:0 auto 27px;
+}
+
+#main .container .contentBody .content .link-wrap li {
+    display:flex;
+    flex-direction:column;
+    box-pack:center;
+    box-align:center;
+    justify-content:center;
+    align-items:center;
+    width:68px;
+}
+
+#main .container .contentBody .content .link-wrap li a {
+    display:-webkit-box;
+    justify-content:center;
+    box-pack:center;
+    width:46px;
+    height:46px;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+#main .container .contentBody .content .link-wrap li p {
+    margin-top:8px;
+    font-size:12px;
+    font-weight:400;
+}
+
+#main .container .contentBody .content .link-wrap li:nth-child(1) a {
+    background-image:url(../images/main/kakao.svg);
+    background-size: 46px;
+}
+
+#main .container .contentBody .content .link-wrap li:nth-child(2) a {
+    border-radius:46px;
+    background-color:#000;
+    background-image:url(../images/main/link.svg);
+    background-size: 20px;
+}
+
+#main .container .contentBody .content .info {
+    margin-top:60px;
+    font-size:15px;
+    font-weight:400;
+    line-height:26px;
+    color:#ffffff66;
+
+}
+
+/*
+main id="main">
+    <div class="container">
+        <div class="contentHeader">
+            <h1>珥덈��븯湲�</h1>
+            <p>�궡 移쒓뎄�땲源�<br>2二� 諛쏄퀬 2二� �뜑!</p>
+
+        </div>
+        <div class="contentBody">
+            <button type="button">移쒓뎄 珥덈��븯湲�</button>
+            <p>�뜑 留롮� 移쒓뎄�뿉寃�<br>2二� 臾대즺 �삙�깮�쓣 �꽑臾쇳빐蹂댁꽭�슂</p>
+            <ul class="link-wrap">
+                <li>
+                    <a href="" class="kakao"></a>
+                    <p>移댁뭅�삤�넚</p>
+                </li>
+                <li>
+                    <a href="" class="link"></a>
+                    <p>留곹겕 蹂듭궗</p>
+                </li>
+            </ul>
+            <div class="info">
+                [珥덈� 媛��뒫 ���긽]<br>
+                - 珥덈� 諛쏆� �쑀��媛� �떊洹� 援щ룆�쓣 �떆�옉�븷 寃쎌슦 湲곗〈 臾대즺 泥댄뿕 �삙�깮�뿉 移쒓뎄 珥덈� �삙�깮 2二쇨� 異붽�濡� �젣怨듬맗�땲�떎. (珥� �븳�떖 臾대즺 泥댄뿕 �삙�깮)<br>
+                - 珥덈� 諛쏆� �쑀�� 以� 湲곗〈 援щ룆 �궡�뿭�씠 �엳�뒗 遺꾩쓽 寃쎌슦 �옱援щ룆 �떆 2二� 臾대즺 �삙�깮�씠 �젣怨듬맗�땲�떎.<br>
+                - 珥덈� 諛쏆� �쑀��媛� �솓梨� �씠�슜沅뚯쓣 援щ룆 以묒씤 寃쎌슦 珥덈� 媛��뒫 ���긽�뿉�꽌 �젣�쇅�맗�땲�떎.
+            </div>
+        </div>
+    </div>
+</main>
+*/

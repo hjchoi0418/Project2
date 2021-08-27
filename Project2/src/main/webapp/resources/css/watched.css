@@ -1,0 +1,132 @@
+#main {
+    top:100px;
+}
+
+#main .tab {
+    margin-bottom:60px;
+    padding:0 40px;
+}
+
+#main .tab li {
+    display:inline-block;
+    font-size:1.875vw;
+    margin-right:30px;
+    padding-bottom:15px;
+    cursor:pointer;
+    color:#ffffff80;
+}
+
+#main .tab li.active {
+    color:#FFF;
+    border-bottom:3px solid #FFF;
+}
+
+.watchedList {
+    padding:0 25px;
+    display:grid;
+    grid-template-columns: repeat(auto-fill,minmax(220px, 1fr));
+}
+
+.watchedList .watchedContent {
+    position:relative;
+    margin:10px;
+    cursor:pointer;
+    justify-content:center;
+    transform:scale(0.9);
+    transition:ease .2s;
+    overflow:hidden;
+}
+
+.watchedList .watchedContent .content-title {
+    display:block;
+    width:100%;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    margin-top:5px;
+}
+
+.watchedList .watchedContent:hover {
+    transform: scale(1.2);
+    z-index:1;
+}
+
+.watchedList .watchedContent:hover .content-title {
+    display:none;
+}
+
+.watchedList .watchedContent:hover .hoverContent {
+    display:block;
+}
+
+.watchedList .watchedContent .hoverContent {
+    display:none;
+    position:absolute;
+    top:0;
+    left:0;
+    background: #000;
+    width:100%;
+    height:100%;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+.watchedList .watchedContent .hoverContent .close {
+    position:absolute;
+    top:0;
+    right:0;
+}
+
+.watchedList .watchedContent .hoverContent .close {
+    position:absolute;
+    top:5px;
+    right:5px;
+    font-size:25px;
+}
+
+.watchedList .watchedContent .hoverContent .hoverContentControl {
+    position: relative;
+    top:30px;
+    left:5px;
+}
+
+.watchedList .watchedContent .hoverContent .hoverContentControl .play {
+    font-size:50px;
+    color:#FFF;
+    transition:ease .2s;
+}
+
+.watchedList .watchedContent .hoverContent .hoverContentControl .play:hover {
+    color:#F82F62;
+}
+
+.watchedList .watchedContent .hoverContent .hoverContentControl .contentInfo {
+    display:inline-block;
+    position:relative;
+    top:-8px;
+}
+
+.watchedList .watchedContent .hoverContent .hoverContentControl .contentInfo .title {
+    margin-bottom:5px;
+    font-size:18px;
+    font-weight:700;
+}
+
+.watchedList .watchedContent .hoverContent .hoverContentControl .contentInfo .info {
+    font-size:12px;
+}
+
+.watchedList .watchedContent .hoverContent .hoverContentControl .story {
+    position: absolute;
+    left:0;
+    width:100%;
+    height:4em;
+    padding:0 10px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    line-height:1.2;
+    font-size:12px;
+    line-height:16px;
+}
