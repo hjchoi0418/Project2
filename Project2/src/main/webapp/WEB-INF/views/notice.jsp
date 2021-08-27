@@ -10,6 +10,7 @@
   <title>왓챠</title>
   <link rel="stylesheet" href="<%=request.getContextPath() %>/resources/css/notice.css">
 </head>
+
 <body>
   <nav class="css-150hwvs">
     <ul class="css-5aqbxb">
